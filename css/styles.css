@@ -34,7 +34,7 @@ body {
   color: #2196f3;
 }
 
-.logo-dark-theme {
+.footer-logo {
   color: #ffffff;
 }
 
@@ -45,10 +45,11 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-color);
+  cursor: pointer;
 }
 
 .contact {
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*====END HEADER====*/
 
@@ -60,7 +61,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #FFFFFF*/
+  color: #ffffff;
 }
 
 .hero-modal-btn {
@@ -72,11 +73,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  color: #212121;
+  color: var(--main-color);
 }
 /*====END HERO====*/
 
@@ -94,11 +96,10 @@ body {
 }
 
 .about-description {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*====END ABOUT====*/
 
@@ -122,24 +123,23 @@ body {
 }
 
 .team-description {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*====END TEAM====*/
 
 /*====FOOTER====*/
 .footer-link {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /*color: #FFFFFF;*/
+  color: #ffffff;
   opacity: 60%;
   text-decoration: none;
 }
@@ -152,14 +152,15 @@ body {
 /*====PORTFOLIO====*/
 /*====PORTFOLIO HERO====*/
 .modal-btn {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
+  cursor: pointer;
 }
 
 .modal-btn:hover,
@@ -177,11 +178,10 @@ body {
 }
 
 .gallery-description {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*====END PORTFOLIO GALLERY====*/
 /*====END PORTFOLIO====*/
