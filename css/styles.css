@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
+  background-color: #ffffff;
 }
 
 /*====COMPONENTS====*/
@@ -54,6 +55,10 @@ body {
 /*====END HEADER====*/
 
 /*====HERO====*/
+.hero {
+  background-color: #2f303a;
+}
+
 .main-header {
   font-weight: 900;
   font-size: 44px;
@@ -73,12 +78,14 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background-color: #2196f3;
   cursor: pointer;
 }
 
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
   color: var(--main-color);
+  background-color: #f5f4fa;
 }
 /*====END HERO====*/
 
@@ -114,6 +121,10 @@ body {
 /*====END SERVICES====*/
 
 /*====TEAM====*/
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-header {
   font-weight: 500;
   font-size: 16px;
@@ -132,6 +143,10 @@ body {
 /*====END TEAM====*/
 
 /*====FOOTER====*/
+.footer {
+  background-color: #2f303a;
+}
+
 .footer-link {
   font-family: var(--main-font);
   font-style: normal;
@@ -160,12 +175,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  background-color: #f5f4fa;
   cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   color: #ffffff;
+  background-color: #2196f3;
 }
 /*====END PORTFOLIO HERO====*/
 
