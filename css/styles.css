@@ -12,6 +12,10 @@ body {
 }
 
 /*====COMPONENTS====*/
+.container {
+  width: 1200px;
+
+}
 .navigation-link:hover,
 .navigation-link:focus,
 .footer-link:hover,
