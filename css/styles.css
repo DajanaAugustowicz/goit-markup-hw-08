@@ -46,14 +46,16 @@ img {
 
 .container {
   width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin: 0;
+  padding-right: 215px;
+  padding-left: 215px;
 }
-
 /*====COMPONENTS====*/
 .navigation-link:hover,
 .navigation-link:focus,
@@ -64,6 +66,17 @@ img {
 /*====END COMPONENTS====*/
 
 /*====HEADER====*/
+.header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: bold;
@@ -72,6 +85,7 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo > .web {
@@ -80,6 +94,14 @@ img {
 
 .footer-logo {
   color: #ffffff;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 46px;
 }
 
 .navigation-link {
@@ -92,14 +114,36 @@ img {
   cursor: pointer;
 }
 
-.contact {
+.contact-mail {
+  margin-right: 50px;
+  margin-left: 371px;
+}
+
+.contact-phone {
+  margin-right: auto;
+}
+
+.contact-mail,
+.contact-phone {
   color: var(--secondary-color);
 }
 /*====END HEADER====*/
 
 /*====HERO====*/
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   background-color: #2f303a;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #212121;
 }
 
 .main-header {
@@ -110,6 +154,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 696px;
 }
 
 .hero-modal-btn {
@@ -123,6 +168,8 @@ img {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
+  padding: 10px 41px 10px 42px;
+  border-radius: 4px;
 }
 
 .hero-modal-btn:hover,
@@ -133,8 +180,27 @@ img {
 /*====END HERO====*/
 
 /*====ABOUT====*/
+.about .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .hidden {
   display: none;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -94px;
+}
+
+.about-item {
+  margin-left: 30px;
+  margin-top: 94px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .about-header {
@@ -154,6 +220,25 @@ img {
 /*====END ABOUT====*/
 
 /*====SERVICES====*/
+.services .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -94px;
+}
+
+.services-item {
+  margin-left: 30px;
+  margin-top: 94px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 .secondary-header {
   font-weight: bold;
   font-size: 36px;
@@ -230,6 +315,20 @@ img {
 /*====END PORTFOLIO HERO====*/
 
 /*====PORTFOLIO GALLERY====*/
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
+  width: 1170px;
+}
+
+.gallery-item {
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-basis: calc(100% / 3 - 10px)
+}
+
 .gallery-header {
   font-weight: bold;
   font-size: 18px;
