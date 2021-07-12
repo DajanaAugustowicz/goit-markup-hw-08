@@ -53,8 +53,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
 }
 /*====COMPONENTS====*/
 .navigation-link:hover,
@@ -71,6 +69,12 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   align-items: center;
+}
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .navigation {
@@ -182,7 +186,6 @@ img {
 /*====ABOUT====*/
 .about .container {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -192,6 +195,7 @@ img {
 
 .about-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -94px;
@@ -220,23 +224,17 @@ img {
 /*====END ABOUT====*/
 
 /*====SERVICES====*/
-.services .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.services {
+  padding-top: 0;
+}
+
+.services .secondary-header {
+  margin-bottom: 50px;
 }
 
 .services-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -94px;
-}
-
-.services-item {
-  margin-left: 30px;
-  margin-top: 94px;
-  flex-basis: calc(100% / 3 - 30px);
+  justify-content: space-between;
 }
 
 .secondary-header {
@@ -249,6 +247,20 @@ img {
 /*====END SERVICES====*/
 
 /*====TEAM====*/
+.team .secondary-header {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item-wrapper {
+  padding: 30px 70px;
+  background-color: #ffffff;
+}
+
 .team {
   background-color: #f5f4fa;
 }
@@ -259,6 +271,7 @@ img {
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-description {
@@ -273,6 +286,22 @@ img {
 /*====FOOTER====*/
 .footer {
   background-color: #2f303a;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -294,6 +323,21 @@ img {
 
 /*====PORTFOLIO====*/
 /*====PORTFOLIO HERO====*/
+.portfolio-hero .container {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .modal-btn {
   font-family: var(--main-font);
   font-style: normal;
@@ -305,6 +349,8 @@ img {
   color: var(--main-color);
   background-color: #f5f4fa;
   cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -315,18 +361,32 @@ img {
 /*====END PORTFOLIO HERO====*/
 
 /*====PORTFOLIO GALLERY====*/
+.gallery .container {
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
-  width: 1170px;
+  margin-left: -30px;
+  margin-top: -30px;
+  width: 1200px;
 }
 
 .gallery-item {
-  margin-left: 10px;
-  margin-top: 10px;
-  flex-basis: calc(100% / 3 - 10px)
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.gallery-item-wrapper {
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
 }
 
 .gallery-header {
@@ -334,6 +394,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .gallery-description {
