@@ -54,12 +54,16 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /*====COMPONENTS====*/
 .navigation-link:hover,
 .navigation-link:focus,
 .footer-link:hover,
-.footer-link:focus {
+.footer-link:focus,
+.contact-icon:hover,
+.contact-icon:focus {
   color: #2196f3;
+  fill: #2196f3;
 }
 /*====END COMPONENTS====*/
 
@@ -100,7 +104,10 @@ img {
   color: #ffffff;
 }
 
-.navigation-list {
+.navigation-list,
+.contact-list,
+.social-links,
+.clients-list {
   display: flex;
 }
 
@@ -121,6 +128,10 @@ img {
 .contact-mail {
   margin-right: 50px;
   margin-left: 371px;
+}
+
+.contact-icon {
+  fill: var(--secondary-color);
 }
 
 .contact-phone {
@@ -208,12 +219,21 @@ img {
   flex-basis: calc(100% / 4 - 30px);
 }
 
+.about-img {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .about-header {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .about-description {
@@ -258,7 +278,9 @@ img {
 }
 
 .team-item-wrapper {
-  padding: 30px 70px;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 
@@ -281,8 +303,70 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+.social-links-item:not(last-child) {
+  padding-right: 10px;
+}
+
+.social-links-icon {
+  fill: #afb1b8;
+}
+
+.social-links-icon:hover,
+.social-links-icon:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: none;
+  height: 44px;
+  width: 44px;
 }
 /*====END TEAM====*/
+
+/*====CLIENTS====*/
+.clients {
+  padding-top: 94px;
+}
+
+.clients .clients-header {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list-item:not(last-child) {
+  padding-right: 30px;
+}
+
+.clients-logo {
+  fill: #afb1b8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  fill: #2196f3;
+  cursor: pointer;
+  border-color: #2196f3;
+}
+/*====END CLIENTS====*/
 
 /*====FOOTER====*/
 .footer {
@@ -319,6 +403,20 @@ img {
 
 .footer-address {
   opacity: 1;
+}
+
+.footer-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  fill: #ffffff;
 }
 /*====END FOOTER====*/
 
