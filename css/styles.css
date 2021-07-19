@@ -153,7 +153,7 @@ img {
   border-bottom-style: solid;
   border-bottom-color: #212121;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/background-img.jpg');
+    url('/images/background-img.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 25%;
@@ -551,6 +551,18 @@ img {
   border-width: 1px;
   border-style: solid;
   border-color: #eeeeee;
+}
+
+.gallery-card {
+  width: 370px;
+  height: 294px;
+}
+
+.gallery-card > .gallery-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .gallery-header {
