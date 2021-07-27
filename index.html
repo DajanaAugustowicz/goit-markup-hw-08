@@ -22,7 +22,7 @@
           <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
           <ul class="navigation-list list">
             <li class="navigation-item">
-              <a class="navigation-link current" href="./index.html">Agencja</a>
+              <a class="current" href="./index.html">Agencja</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="./portfolio.html">Portfolio</a>
@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="hero-modal-btn" type="button">Zamów usługę</button>
+          <button type="button" class="open-btn hero-modal-btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <!--END HERO-->
@@ -159,40 +159,52 @@
           <ul class="services-list list">
             <li class="services-item">
               <div class="services-card">
-                <img
-                  class="services-img"
-                  src="./images/services/services-a.jpg"
-                  alt="Close up image of programer working in his desk office"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="services-header">Aplikacje komputerowe</h3>
+                <div class="services-card-img">
+                  <img
+                    class="services-img"
+                    src="./images/services/services-a.jpg"
+                    alt="Close up image of programer working in his desk office"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+                <div class="services-card-wrapper">
+                  <h3 class="services-header">Aplikacje komputerowe</h3>
+                </div>
               </div>
             </li>
 
             <li class="services-item">
               <div class="services-card">
-                <img
-                  class="services-img"
-                  src="./images/services/services-b.jpg"
-                  alt="Web UI designers are developing application for smartphones"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="services-header">Aplikacje mobilne</h3>
+                <div class="services-card-img">
+                  <img
+                    class="services-img"
+                    src="./images/services/services-b.jpg"
+                    alt="Web UI designers are developing application for smartphones"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+                <div class="services-card-wrapper">
+                  <h3 class="services-header">Aplikacje mobilne</h3>
+                </div>
               </div>
             </li>
 
             <li class="services-item">
               <div class="services-card">
-                <img
-                  class="services-img"
-                  src="./images/services/services-c.jpg"
-                  alt="Creative artist web design working with colour selection graphic tablet"
-                  width="370"
-                  height="294"
-                />
-                <h3 class="services-header">Rozwiązania graficzne</h3>
+                <div class="services-card-img">
+                  <img
+                    class="services-img"
+                    src="./images/services/services-c.jpg"
+                    alt="Creative artist web design working with colour selection graphic tablet"
+                    width="370"
+                    height="294"
+                  />
+                </div>
+                <div class="services-card-wrapper">
+                  <h3 class="services-header">Rozwiązania graficzne</h3>
+                </div>
               </div>
             </li>
           </ul>
@@ -513,6 +525,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
