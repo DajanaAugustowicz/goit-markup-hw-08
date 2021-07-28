@@ -140,14 +140,23 @@ img {
   color: #2196f3;
 }
 
-/* .current::after {
-  text-decoration: underline;
-  border-bottom-width: 58px;
-  border-bottom-height: 4px;
-  border-bottom-radius: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #2196F3;
-} */
+.current {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 28px;
+}
+
+.current::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196F3;
+}
 
 .contact-mail {
   margin-right: 30px;
