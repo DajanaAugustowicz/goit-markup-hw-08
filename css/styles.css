@@ -633,6 +633,16 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+.newsletter-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 24px;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .newsletter-btn:hover,
 .newsletter-btn:focus,
 .newsletter-icon:hover,
@@ -640,14 +650,6 @@ img {
   color: var(--main-color);
   fill: var(--main-color);
   background-color: #f5f4fa;
-}
-
-.newsletter-icon {
-  fill: #ffffff;
-  margin-left: 24px;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*====END FOOTER====*/
 
