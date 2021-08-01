@@ -582,12 +582,12 @@ img {
   padding-left: 78px;
 }
 
-.form {
+.footer-form {
   display: flex;
   flex-direction: row;
 }
 
-.form-input {
+.footer-input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -607,7 +607,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus-within {
+.footer-input:focus-within {
   border-color: #2196f3;
 }
 
@@ -700,6 +700,109 @@ img {
 
 .is-hidden .modal {
   transform: rotate(270deg);
+}
+
+.backdrop-signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.backdrop-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop-header {
+  justify-content: center;
+  align-content: center;
+  width: 448px;
+  height: 23px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 3%;
+  text-align: center;
+  vertical-align: top;
+  color: #212121;
+}
+
+.backdrop-label-text {
+  margin-left: 40px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 1%;
+  color: #757575;
+}
+
+.backdrop-input {
+  width: 448px;
+  height: 40px;
+  margin-left: 40px;
+  margin-bottom: 28px;
+  border-radius: 4px;
+  border-width: 1px;
+  color: rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-input .backdrop-icon {
+}
+
+.backdrop-comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-width: 1px;
+  color: rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-accept {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.backdrop-accept-text {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 3%;
+}
+
+.backdrop-accept-text-blue {
+  color: #2196F3;
+  text-decoration: underline;
+}
+
+.backdrop-submit-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  align-content: center;
+  letter-spacing: 6%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* margin-bottom: 40px;
+  margin-left: 164px; */
 }
 /*====END BACKDROP====*/
 
