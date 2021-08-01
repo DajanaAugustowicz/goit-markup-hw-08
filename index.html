@@ -468,6 +468,7 @@
       <!--END CLIENTS-->
     </main>
 
+    <!--FOOTER-->
     <footer class="footer">
       <div class="container">
         <div class="footer-left-side">
@@ -528,9 +529,9 @@
 
         <div class="footer-newsletter">
           <h3 class="footer-header">Zapisz się do newslettera</h3>
-          <form class="form" name="signup_form" autocomplete="on">
-            <label class="form-label">
-              <input type="email" class="form-input" name="email" required placeholder="E-mail"/></label>
+          <form class="footer-form" name="signup_form" autocomplete="on">
+            <label class="footer-label">
+              <input type="email" class="footer-input" name="email" required placeholder="E-mail"/></label>
             <button type="submit" class="newsletter-btn">Zapisz się
               <svg class="newsletter-icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -540,7 +541,9 @@
         </div>
       </div>
     </footer>
+    <!--END FOOTER-->
 
+    <!--BACKDROP-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -548,8 +551,50 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="backdrop-signup-form">
+      <h3 class="backdrop-header">Zostaw swoje dane w formularzu poniżej</h3>
+      <form class="backdrop-form" name="signup_form" autocomplete="on">
+        <label class="backdrop-label">
+          <span class="backdrop-label-text">Imie</span>
+          <input type="text" class="backdrop-input backdrop-name" name="username"/>
+          <svg class="backdrop-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </label>
+        <label class="backdrop-label">
+          <span class="backdrop-label-text">Telefon</span>
+          <input type="tel" class="backdrop-input backdrop-phone" name="phone_number"/>
+          <svg class="backdrop-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          </label>
+        <label class="backdrop-label">
+          <span class="backdrop-label-text">Email</span>
+          <input type="email" class="backdrop-input backdrop-email" name="email"/>
+          <svg class="backdrop-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </label>
+        <label class="backdrop-label">
+          <span class="backdrop-label-text">Komentarz</span>
+          <textarea class="backdrop-comment" name="comment" rows="5" placeholder="Wprowadź tekst">
+          </textarea>
+          </label>
+        <label class="backdrop-label">
+          <input type="checkbox" class="backdrop-accept" name="accept" value="accept"/>
+          <svg class="backdrop-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <span class="backdrop-accept-text">Oświadczam iż akceptuję 
+            <span class="backdrop-accept-text-blue">Regulamin</span> i 
+            <span class="backdrop-accept-text-blue">Politykę Prywatności.</span></span>
+        </label>
+        <button class="backdrop-submit-btn" type="submit">Wyślij</button>
+      </form>
       </div>
     </div>
+    </div>
+    <!--END BACKDROP-->
 
     <script src="./js/modal.js"></script>
   </body>
