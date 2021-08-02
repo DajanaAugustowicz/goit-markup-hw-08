@@ -605,6 +605,7 @@ img {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .footer-input:focus-within {
@@ -752,8 +753,8 @@ img {
   color: rgba(33, 33, 33, 0.2);
 }
 
-.backdrop-input .backdrop-icon {
-}
+/* .backdrop-input .backdrop-icon {
+} */
 
 .backdrop-comment {
   resize: none;
