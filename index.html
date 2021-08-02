@@ -551,45 +551,45 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="backdrop-signup-form">
-      <h3 class="backdrop-header">Zostaw swoje dane w formularzu poniżej</h3>
-      <form class="backdrop-form" name="signup_form" autocomplete="on">
-        <label class="backdrop-label">
-          <span class="backdrop-label-text">Imie</span>
-          <input type="text" class="backdrop-input backdrop-name" name="username"/>
-          <svg class="backdrop-icon" width="18px" height="18px">
+        <div class="modal-signup-form">
+      <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+      <form class="modal-form" action="#" method="POST" name="signup-form" autocomplete="on">
+        <label class="modal-label">
+          <span class="modal-label-text">Imie</span>
+          <input type="text" class="modal-input modal-name" name="username"/>
+          <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
         </label>
-        <label class="backdrop-label">
-          <span class="backdrop-label-text">Telefon</span>
-          <input type="tel" class="backdrop-input backdrop-phone" name="phone_number"/>
-          <svg class="backdrop-icon" width="18px" height="18px">
+        <label class="modal-label">
+          <span class="modal-label-text">Telefon</span>
+          <input type="tel" class="modal-input modal-phone" name="phone_number"/>
+          <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
           </label>
-        <label class="backdrop-label">
-          <span class="backdrop-label-text">Email</span>
-          <input type="email" class="backdrop-input backdrop-email" name="email"/>
-          <svg class="backdrop-icon" width="18px" height="18px">
+        <label class="modal-label">
+          <span class="modal-label-text">Email</span>
+          <input type="email" class="modal-input modal-email" name="email"/>
+          <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
         </label>
-        <label class="backdrop-label">
-          <span class="backdrop-label-text">Komentarz</span>
-          <textarea class="backdrop-comment" name="comment" rows="5" placeholder="Wprowadź tekst">
+        <label class="modal-label">
+          <span class="modal-label-text">Komentarz</span>
+          <textarea class="modal-comment" name="comment" rows="5" placeholder="Wprowadź tekst">
           </textarea>
           </label>
-        <label class="backdrop-label">
-          <input type="checkbox" class="backdrop-accept" name="accept" value="accept"/>
-          <svg class="backdrop-icon" width="18px" height="18px">
+        <label class="modal-label">
+          <input type="checkbox" class="modal-form-policy" id="user-policy" name="policy"/>
+          <label for="user-policy" class="modal-form-policy-text">Oświadczam iż akceptuję 
+            <span class="modal-form-policy-text-blue">Regulamin</span> i 
+            <span class="modal-form-policy-text-blue">Politykę Prywatności.</span></label>
+          <svg class="modal-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-check"></use>
           </svg>
-          <span class="backdrop-accept-text">Oświadczam iż akceptuję 
-            <span class="backdrop-accept-text-blue">Regulamin</span> i 
-            <span class="backdrop-accept-text-blue">Politykę Prywatności.</span></span>
         </label>
-        <button class="backdrop-submit-btn" type="submit">Wyślij</button>
+        <button class="modal-submit-btn" type="submit">Wyślij</button>
       </form>
       </div>
     </div>
