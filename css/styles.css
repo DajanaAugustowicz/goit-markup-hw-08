@@ -2,12 +2,13 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --main-color: #212121;
-  --secondary-color: #757575;
+  --secondary-color: #2196f3;
+  --third-color: #757575;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--main-color);
   background-color: #ffffff;
   margin: 0;
 }
@@ -67,8 +68,8 @@ img {
 .footer-link:focus,
 .contact-icon:hover,
 .contact-icon:focus {
-  color: #2196f3;
-  fill: #2196f3;
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 /*====END COMPONENTS====*/
 
@@ -79,9 +80,7 @@ img {
 }
 
 .header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -91,18 +90,18 @@ img {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--main-color);
   text-decoration: none;
   margin-right: 93px;
 }
 
 .logo > .web {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 
 .navigation-list,
@@ -129,11 +128,9 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   text-decoration: none;
-  fill: var(--secondary-color);
+  fill: var(--third-color);
   cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -142,7 +139,7 @@ img {
 }
 
 .current {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 
 .current::after {
@@ -151,7 +148,7 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
+  background-color: var(--secondary-color);
   border-radius: 2px;
   border-style: none;
   top: 43.5px;
@@ -168,14 +165,12 @@ img {
 
 .contact-mail,
 .contact-phone {
-  color: var(--secondary-color);
+  color: var(--third-color);
 }
 
 .contact-icon {
   margin-right: 10px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*====END HEADER====*/
 
@@ -191,9 +186,7 @@ img {
 
 .hero {
   background-color: #2f303a;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: #212121;
+  border-bottom: 2px solid var(--main-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-img.jpg');
   background-size: cover;
@@ -218,14 +211,12 @@ img {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--secondary-color);
   cursor: pointer;
   padding: 10px 41px 10px 42px;
   border-radius: 4px;
   border-style: none;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-btn:hover,
@@ -283,7 +274,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--third-color);
 }
 /*====END ABOUT====*/
 
@@ -404,7 +395,7 @@ img {
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--third-color);
   margin-bottom: 16px;
 }
 
@@ -424,9 +415,7 @@ img {
   border-style: none;
   height: 44px;
   width: 44px;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-icon:hover,
@@ -434,7 +423,7 @@ img {
 .footer-icon:hover,
 .footer-icon:focus {
   fill: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--secondary-color);
   cursor: pointer;
   border-radius: 50%;
   border-style: none;
@@ -471,20 +460,16 @@ img {
 
 .clients-logo {
   fill: #afb1b8;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition-property: fill, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo:hover,
 .clients-logo:focus {
-  fill: #2196f3;
+  fill: var(--secondary-color);
   cursor: pointer;
-  border-color: #2196f3;
+  border-color: var(--secondary-color);
 }
 /*====END CLIENTS====*/
 
@@ -526,9 +511,7 @@ img {
   color: #ffffff;
   opacity: 60%;
   text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address {
@@ -552,9 +535,7 @@ img {
   border-style: none;
   height: 44px;
   width: 44px;
-  transition-property: fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links:first-child {
@@ -588,8 +569,7 @@ img {
   width: 358px;
   height: 50px;
   border-radius: 4px;
-  border-color: rgba(255, 255, 255, 0.3);
-  border-width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
   line-height: 1.25;
   text-align: left;
@@ -599,14 +579,12 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-right: 12px;
   background-color: inherit;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .footer-input:focus-within {
-  border-color: #2196f3;
+  border-color: var(--secondary-color);
 }
 
 .newsletter-btn {
@@ -620,7 +598,7 @@ img {
   text-align: left;
   letter-spacing: 6%;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--secondary-color);
   cursor: pointer;
   padding-left: 42px;
   border-radius: 4px;
@@ -637,12 +615,14 @@ img {
   transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-btn:hover,
-.newsletter-btn:focus,
-.newsletter-icon:hover,
-.newsletter-icon:focus {
+.newsletter-btn:hover > *,
+.newsletter-btn:focus > * {
   color: var(--main-color);
   fill: var(--main-color);
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:focus {
   background-color: #f5f4fa;
 }
 /*====END FOOTER====*/
@@ -703,7 +683,7 @@ img {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 3%;
-  color: #212121;
+  color: var(--main-color);
   margin-bottom: 12px;
 }
 
@@ -720,7 +700,7 @@ img {
   text-align: left;
   vertical-align: top;
   letter-spacing: 1%;
-  color: #757575;
+  color: var(--third-color);
 }
 
 .modal-form-input-wrapper {
@@ -740,11 +720,11 @@ img {
 
 .modal-form-input:focus {
   outline: none;
-  border-color: #2196f3;
+  border-color: var(--secondary-color);
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  fill: #2196f3;
+  fill: var(--secondary-color);
 }
 
 .modal-form-icon {
@@ -774,7 +754,7 @@ img {
 
 .modal-form-message:focus {
   outline: none;
-  border-color: #2196f3;
+  border-color: var(--secondary-color);
 }
 
 .modal-form-message::placeholder {
@@ -796,7 +776,7 @@ img {
   content: '';
   width: 14px;
   height: 14px;
-  border: 2px solid #212121;
+  border: 2px solid var(--main-color);
   border-radius: 3px;
   margin-right: 8px;
   cursor: pointer;
@@ -804,13 +784,13 @@ img {
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
-  background-color: #2196f3;
-  border: 1px solid #2196f3;
+  background-color: var(--secondary-color);
+  border-width: 1px;
+  border-color: var(--secondary-color);
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
-  border: 1px solid #2196f3;
 }
 
 .modal-form-policy-text {
@@ -821,12 +801,12 @@ img {
   vertical-align: top;
   align-items: center;
   letter-spacing: 3%;
-  color: #757575;
+  color: var(--third-color);
   cursor: pointer;
 }
 
 .modal-form-policy-link {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 
 .visually-hidden {
@@ -846,7 +826,7 @@ img {
   height: 50px;
   border-radius: 4px;
   border-style: none;
-  background-color: #2196f3;
+  background-color: var(--secondary-color);
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
@@ -856,6 +836,7 @@ img {
   letter-spacing: 6%;
   margin: 0 auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:hover,
@@ -896,18 +877,15 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   border-style: none;
-  transition-property: color, background-color, box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  background-color: var(--secondary-color);
 }
 /*====END PORTFOLIO HERO====*/
 
@@ -931,9 +909,7 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item:hover,
@@ -948,9 +924,7 @@ img {
   border-top-width: none;
   border-top-style: none;
   border-top-color: none;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .gallery-card {
@@ -1004,7 +978,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--third-color);
 }
 /*====END PORTFOLIO GALLERY====*/
 /*====END PORTFOLIO====*/
