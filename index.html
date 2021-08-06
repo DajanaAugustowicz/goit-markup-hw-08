@@ -64,7 +64,6 @@
         </div>
       </section>
       <!--END HERO-->
-      
 
       <!--ABOUT-->
       <section class="about section">
@@ -531,9 +530,15 @@
         <div class="footer-newsletter">
           <h3 class="footer-header">Zapisz się do newslettera</h3>
           <form class="footer-form" name="signup_form" autocomplete="on">
-            <label class="footer-label">
-              <input type="email" class="footer-input" name="email" required placeholder="E-mail"
-            /></label>
+            <label for="email" class="footer-label"></label>
+            <input
+              type="email"
+              class="footer-input"
+              name="email"
+              id="email"
+              required
+              placeholder="E-mail"
+            />
             <button type="submit" class="newsletter-btn">
               <span class="newsletter-btn-text">Zapisz się</span>
               <svg class="newsletter-icon" width="24px" height="24px">
@@ -557,49 +562,46 @@
 
         <h2 class="modal-form-header">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal-form" name="modal-form" autocomplete="on">
-          <label class="modal-form-field"
-            >Imie
-            <span class="modal-form-input-wrapper">
-              <input type="text" name="user-name" class="modal-form-input" />
-              <span class="modal-form-icon"
-                ><svg class="modal-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-person"></use></svg
-              ></span>
-            </span>
-          </label>
+          <label for="user-name" class="modal-form-field">Imie</label>
+          <span class="modal-form-input-wrapper">
+            <input type="text" name="user-name" id="user-name" class="modal-form-input" />
+            <span class="modal-form-icon"
+              ><svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-person"></use></svg
+            ></span>
+          </span>
 
-          <label class="modal-form-field"
-            >Telefon
-            <span class="modal-form-input-wrapper">
-              <input type="tel" name="phone-number" class="modal-form-input" />
-              <span class="modal-form-icon"
-                ><svg class="modal-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-phone"></use></svg
-              ></span>
-            </span>
-          </label>
+          <label for="user-phone" class="modal-form-field">Telefon</label>
+          <span class="modal-form-input-wrapper">
+            <input type="tel" name="phone-number" id="user-phone" class="modal-form-input" />
+            <span class="modal-form-icon"
+              ><svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+            ></span>
+          </span>
 
-          <label class="modal-form-field"
-            >Email
-            <span class="modal-form-input-wrapper">
-              <input type="email" name="email" class="modal-form-input" />
-              <span class="modal-form-icon"
-                ><svg class="modal-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-email"></use></svg
-              ></span>
-            </span>
-          </label>
+          <label for="user-email" class="modal-form-field">Email</label>
+          <span class="modal-form-input-wrapper">
+            <input type="email" name="email" id="user-email" class="modal-form-input" />
+            <span class="modal-form-icon"
+              ><svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-email"></use></svg
+            ></span>
+          </span>
 
-          <label class="modal-form-field"
-            >Komentarz
-            <textarea class="modal-form-message" name="user-message" placeholder="Wprowadź tekst">
-            </textarea>
-          </label>
+          <label for="user-message" class="modal-form-field">Komentarz</label>
+          <textarea
+            class="modal-form-message"
+            name="user-message"
+            id="user-message"
+            placeholder="Wprowadź tekst"
+          >
+          </textarea>
 
           <div class="modal-form-policy-wrapper">
             <input
               type="checkbox"
-              class="modal-form-policy visually-hidden"
+              class="modal-form-policy"
               id="user-policy"
               name="user-policy"
               value="accept-policy"
