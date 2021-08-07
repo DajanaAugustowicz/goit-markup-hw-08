@@ -62,8 +62,8 @@ img {
 }
 
 /*====COMPONENTS====*/
-.navigation-link:hover,
-.navigation-link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .footer-link:hover,
 .footer-link:focus,
 .contact-icon:hover,
@@ -104,7 +104,7 @@ img {
   color: var(--secondary-color);
 }
 
-.navigation-list,
+.navigation__list,
 .contact-list,
 .social-links,
 .clients-list {
@@ -117,11 +117,11 @@ img {
   align-items: center;
 }
 
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 46px;
 }
 
-.navigation-link,
+.navigation__link,
 .current {
   font-weight: 500;
   font-size: 14px;
@@ -134,7 +134,7 @@ img {
   position: relative;
 }
 
-.navigation-link {
+.navigation__link {
   color: var(--main-color);
 }
 
@@ -193,7 +193,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.main-header {
+.hero__header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -205,7 +205,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-modal-btn {
+.hero__modal-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
@@ -219,8 +219,8 @@ img {
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-modal-btn:hover,
-.hero-modal-btn:focus {
+.hero__modal-button:hover,
+.hero__modal-button:focus {
   color: var(--main-color);
   background-color: #f5f4fa;
 }
