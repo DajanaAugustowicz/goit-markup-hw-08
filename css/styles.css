@@ -516,7 +516,7 @@ img {
   opacity: 1;
 }
 
-.footer-header {
+.footer__header {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
@@ -540,7 +540,7 @@ img {
   padding-left: 0px;
 }
 
-.footer-right-side {
+.footer__social-links {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
