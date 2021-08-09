@@ -1,0 +1,50 @@
+.about .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .about__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .about__item:not(:last-child) {
+    padding-right: 30px;
+  }
+  
+  .about__card-wrapper {
+    width: 270px;
+  }
+  
+  .about__card {
+    width: 270px;
+    height: 120px;
+  }
+  
+  .about__card > .about__card-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .about__item-wrapper {
+    padding-top: 30px;
+  }
+  
+  .about__item-header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .about__item-description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--third-color);
+  }
