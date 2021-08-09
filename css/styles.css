@@ -73,6 +73,10 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
+.hidden {
+  display: none;
+}
 /*====END COMPONENTS====*/
 
 /*====HEADER====*/
@@ -248,10 +252,6 @@ img {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.about__header {
-  display: none;
 }
 
 .about__list {
@@ -843,22 +843,22 @@ img {
 /*====PORTFOLIO====*/
 
 /*====PORTFOLIO HERO====*/
-.portfolio-hero .container {
+.portfolio__hero {
   padding-top: 94px;
   padding-bottom: 50px;
 }
 
-.hero-list {
+.portfolio__navigation-list {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-.hero-item:not(:last-child) {
+.portfolio__navigation-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.modal-btn {
+.portfolio__navigation-btn {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -877,8 +877,8 @@ img {
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.portfolio__navigation-btn:hover,
+.portfolio__navigation-btn:focus {
   color: #ffffff;
   background-color: var(--secondary-color);
 }
@@ -892,7 +892,7 @@ img {
   padding-bottom: 94px;
 }
 
-.gallery-list {
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -901,20 +901,20 @@ img {
   list-style: none;
 }
 
-.gallery-item {
+.gallery__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-item:hover,
-.gallery-item:focus {
+.gallery__item:hover,
+.gallery__item:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-item-wrapper {
+.gallery__item-wrapper {
   padding: 20px 24px;
   background-color: #ffffff;
   border-top-width: none;
@@ -923,14 +923,14 @@ img {
   border: 1px solid #eeeeee;
 }
 
-.gallery-card {
+.gallery__card {
   width: 370px;
   height: 294px;
   position: relative;
   overflow: hidden;
 }
 
-.gallery-item:hover .overlay {
+.gallery__item:hover .overlay {
   transform: translateY(0);
 }
 
@@ -955,14 +955,14 @@ img {
   letter-spacing: 3%;
 }
 
-.gallery-card > .gallery-img {
+.gallery__card > .gallery__img {
   display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.gallery-header {
+.gallery__item-header {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -970,7 +970,7 @@ img {
   margin-bottom: 4px;
 }
 
-.gallery-description {
+.gallery__item-description {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
