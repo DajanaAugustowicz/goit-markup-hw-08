@@ -249,7 +249,7 @@ img {
 /*====END HERO====*/
 
 /*====ABOUT====*/
-.about {
+.about .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -302,7 +302,7 @@ img {
 /*====END ABOUT====*/
 
 /*====SERVICES====*/
-.services {
+.services .container {
   padding-top: 0;
   padding-bottom: 94px;
 }
@@ -351,10 +351,13 @@ img {
 
 /*====TEAM====*/
 
-.team {
-  background-color: #f5f4fa;
+.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .team__card-wrapper {
@@ -454,7 +457,7 @@ img {
 /*====END TEAM====*/
 
 /*====CLIENTS====*/
-.clients {
+.clients .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -843,7 +846,7 @@ img {
 /*====PORTFOLIO====*/
 
 /*====PORTFOLIO HERO====*/
-.portfolio__hero {
+.portfolio__hero .container {
   padding-top: 94px;
   padding-bottom: 50px;
 }
