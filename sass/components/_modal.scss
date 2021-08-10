@@ -185,6 +185,6 @@
     &:hover,
     &:focus {
       color: getColor(primary);     
-      background-color: #f5f4fa; 
+      background-color: getColor(third-neutral); 
     }
   }
