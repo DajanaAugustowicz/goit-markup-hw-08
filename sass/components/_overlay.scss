@@ -10,7 +10,7 @@
 }
 
 .overlay > p {
-    color: #ffffff;
+    color: getColor(primary-neutral);
     padding: 49px 45px 49px 24px;
     margin: 0;
     font-size: 18px;
