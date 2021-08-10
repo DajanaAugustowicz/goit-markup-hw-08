@@ -3,6 +3,8 @@ $colors: (
   'secondary': #2196f3,
   'primary-neutral': #ffffff,
   'secondary-neutral': #757575,
+  'third-neutral': #f5f4fa,
+  'fourth-neutral': #afb1b8,
 );
 
 @function getColor($key) {
