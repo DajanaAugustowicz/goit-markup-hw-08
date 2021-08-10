@@ -1,23 +1,23 @@
 .logo {
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    margin-right: 93px;
-    text-decoration: none;
-  }
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+  text-decoration: none;
+}
   
-  .logo--light-theme {
-    color: var(--main-color);
-  }
+.logo--light-theme {
+  color: getColor(primary);
+}
   
-  .logo--dark-theme {
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
+.logo--dark-theme {
+  color: getColor(primary-neutral);
+  margin-bottom: 20px;
+}
   
-  .logo > .logo__accent-text {
-    color: var(--secondary-color);
-  }
+.logo > .logo__accent-text {
+  color: getColor(secondary);
+}
