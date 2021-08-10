@@ -1,1 +1,15 @@
-// Paleta kolorów układu i zestawy czcionek
+$colors: (
+  'primary': #212121,
+  'secondary': #2196f3,
+  'primary-neutral': #ffffff,
+  'secondary-neutral': #757575,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+}
