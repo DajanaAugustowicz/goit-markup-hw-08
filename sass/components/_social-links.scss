@@ -24,12 +24,12 @@
   }
 }
   
-.social-links__icon--light-theme {
+.social-links__icon--light {
   fill: getColor(fourth-neutral);
   background-color: getColor(primary-neutral);
 }
   
-.social-links__icon--dark-theme {
+.social-links__icon--dark {
   fill: getColor(primary-neutral);
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.1),
