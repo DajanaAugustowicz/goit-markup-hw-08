@@ -909,12 +909,12 @@ img {
   width: 44px;
 }
 
-.social-links__icon--light-theme {
+.social-links__icon--light {
   fill: #afb1b8;
   background-color: #ffffff;
 }
 
-.social-links__icon--dark-theme {
+.social-links__icon--dark {
   fill: #ffffff;
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
