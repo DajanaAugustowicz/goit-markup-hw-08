@@ -18,10 +18,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-  }
-  
-.team__item:not(:last-child) {
-    padding-right: 30px;
+    column-gap: 30px;
   }
   
 .team__card-img {
