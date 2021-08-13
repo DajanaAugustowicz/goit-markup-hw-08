@@ -2,8 +2,5 @@
     display: flex;
     justify-content: center;
     list-style: none;
-  }
-  
-.portfolio__navigation-item:not(:last-child) {
-    margin-right: 8px;
+    column-gap: 8px;
   }
