@@ -7,12 +7,9 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    column-gap: 30px;
   }
-  
-.clients__item:not(:last-child) {
-    padding-right: 30px;
-  }
-  
+
 .clients__logo {
     fill: getColor(fourth-neutral);
     border: 1px solid getColor(fourth-neutral);
