@@ -51,10 +51,10 @@
   justify-content: flex-start;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.contact-info__list {
-  list-style: none;
+  &__list { 
+    list-style: none;
+  }
 }
 
 .contact-info__item:not(:first-child) {
