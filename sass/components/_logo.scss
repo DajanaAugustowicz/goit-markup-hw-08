@@ -8,16 +8,16 @@
   margin-right: 93px;
   text-decoration: none;
 }
-  
-.logo--light {
+
+.logo--light-bg {
   color: getColor(primary);
 }
-  
-.logo--dark {
+
+.logo--dark-bg {
   color: getColor(primary-neutral);
   margin-bottom: 20px;
 }
-  
+
 .logo__accent-text {
   color: getColor(secondary);
 }
