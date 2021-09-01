@@ -1,11 +1,7 @@
 .logo {
   font-family: var(--secondary-font);
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
   text-decoration: none;
 }
 
@@ -20,4 +16,29 @@
 
 .logo__accent-text {
   color: getColor(secondary);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    margin-left: 0px;
+    margin-right: 284px;
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-right: 83px;
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
