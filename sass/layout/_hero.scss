@@ -1,32 +1,75 @@
 .hero .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero {
-    background-color: #2f303a;
-    border-bottom: 2px solid getColor(primary);
+  background-color: #2f303a;
+  border-bottom: 2px solid getColor(primary);
+}
+
+.hero__header {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: getColor(primary-neutral);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/background-img.jpg");
+      url("../images/hero/background-img-mobile.jpg");
+    background-size: 480px 400px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  .hero__header {
+    font-size: 26px;
+    line-height: 1.615;
+    width: 365px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/background-img-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
-.hero__header {
-    font-weight: 900;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/background-img-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero__header {
     font-size: 44px;
     line-height: 1.364;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: getColor(primary-neutral);
     width: 696px;
-    margin-bottom: 30px;
   }
+}
