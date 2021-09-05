@@ -60,6 +60,15 @@
               </a>
             </li>
           </ul>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <button type="button" class="mobile-menu__modal-button" data-modal-open>
+                <svg class="mobile-menu__icon" width="24px" height="16px">
+                  <use href="./images/icons.svg#icon-mobile-menu"></use>
+                  </svg>
+              </button>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -172,7 +181,7 @@
       <!--END ABOUT-->
 
       <!--SERVICES-->
-      <!-- <section class="services">
+      <section class="services">
         <div class="container">
           <h2 class="secondary-header">Czym się zajmujemy</h2>
           <ul class="services__list">
@@ -228,11 +237,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--END SERVICES-->
 
       <!--TEAM-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="secondary-header">Nasz zespół</h2>
           <ul class="team__list">
@@ -493,11 +502,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--END TEAM-->
 
       <!--CLIENTS-->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="secondary-header">Nasi klienci</h2>
           <ul class="clients__list">
@@ -545,12 +554,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--END CLIENTS-->
     </main>
 
     <!--FOOTER-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="contact-info">
           <a class="logo logo--dark" href="index.html"
@@ -651,11 +660,11 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!--END FOOTER-->
 
     <!--BACKDROP-->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="18px" height="18px" x="17px" y="500px">
@@ -738,9 +747,66 @@
           <button type="submit" class="modal-form__button">Wyślij</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!--END BACKDROP-->
 
     <script src="./js/modal.js"></script>
+
+    <!--MOBILE MENU-->
+    <div class="mobile-menu is-hidden" data-modal>
+      <div class="mobile-menu__modal">
+        <button type="button" class="mobile-menu__close-btn" data-modal-close>
+          <svg width="18px" height="18px" x="17px" y="500px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__navigation-list">
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu__current" href="./index.html">Agencja</a>
+          </li>
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu__navigation-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu__navigation-item">
+            <a class="mobile-menu__navigation-link" href="/kontakt">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contact">
+          <li class="mobile-menu__contact-item">
+            <a
+              class="mobile-menu__contact-link mobile-menu__contact-link--phone"
+              href="tel:+48111111111"
+            ><span>+48 111 111 111</span>
+            </a>
+          </li>
+          <li class="mobile-menu__contact-item">
+            <a
+              class="mobile-menu__contact-link mobile-menu__contact-link--mail"
+              href="mailto:info@devstudio.com"
+            ><span>info@devstudio.com</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-links">
+          <li class="mobile-menu__social-links-item">
+            <a class="mobile-menu__social-links-link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a class="mobile-menu__social-links-link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a class="mobile-menu__social-links-link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-links-item">
+            <a class="mobile-menu__social-links-link" href="#">LinkedIn</a>
+          </li>
+      </div>
+    </div>
+    <!--END MOBILE MENU-->
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
