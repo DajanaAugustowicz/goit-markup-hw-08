@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .logo {
-    margin-left: 0px;
+    margin-left: 0;
     font-size: 24px;
     line-height: 1.167;
   }
@@ -28,6 +28,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
+    margin-left: 0;
     margin-right: 83px;
     font-size: 24px;
     line-height: 1.167;
