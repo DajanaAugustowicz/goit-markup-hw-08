@@ -1,47 +1,48 @@
-.team .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-.team {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: getColor(third-neutral);
+    display: flex;
+    flex-direction: column;
   }
-  
-.team__card-wrapper {
+
+  .team__item {
+    margin-top: 30px;
+  }
+
+  .team__card-wrapper {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
-  
-.team__list {
-    display: flex;
-    justify-content: center;
+
+  .team__list {
     list-style: none;
-    column-gap: 30px;
   }
-  
-.team__card-img {
-    width: 270px;
-    height: 260px;
+
+  .team__card-img {
+    width: 450px;
+    height: 460px;
   }
-  
-.team__card-img > .team__img {
+
+  .team__card-img > .team__img {
     display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  
-.team__item-wrapper {
+
+  .team__item-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: getColor(primary-neutral);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
   }
-  
-.team__item-header {
+
+  .team__item-header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -49,8 +50,8 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
-  
-.team__item-description {
+
+  .team__item-description {
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
@@ -58,3 +59,70 @@
     color: getColor(secondary-neutral);
     margin-bottom: 16px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .team .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team {
+    background-color: getColor(third-neutral);
+  }
+
+  .team__card-wrapper {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .team__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    column-gap: 30px;
+  }
+
+  .team__card-img {
+    width: 270px;
+    height: 260px;
+  }
+
+  .team__card-img > .team__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .team__item-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: getColor(primary-neutral);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .team__item-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  .team__item-description {
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor(secondary-neutral);
+    margin-bottom: 16px;
+  }
+}
