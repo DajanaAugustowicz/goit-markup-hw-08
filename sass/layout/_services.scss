@@ -1,26 +1,36 @@
-.services .container {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .services .container {
     padding-top: 0;
     padding-bottom: 94px;
   }
-  
-.services__list {
+
+  .services__list {
     display: flex;
     justify-content: center;
     list-style: none;
     column-gap: 30px;
   }
-  
-.services__img {
+
+  .services__img {
     object-fit: cover;
   }
-  
-.services__item-wrapper {
+
+  .services__item-wrapper {
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
   }
-  
-.services__item-header {
+
+  .services__item-header {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.143;
@@ -31,12 +41,13 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
-  
-.services__card-wrapper {
+
+  .services__card-wrapper {
     position: relative;
   }
-  
-.services__card-wrapper > .services__item-wrapper {
+
+  .services__card-wrapper > .services__item-wrapper {
     position: absolute;
     bottom: 0px;
   }
+}
