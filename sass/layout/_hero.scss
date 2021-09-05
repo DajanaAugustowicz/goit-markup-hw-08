@@ -64,6 +64,12 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .hero__header {
+    font-size: 26px;
+    line-height: 1.615;
+    width: 365px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
