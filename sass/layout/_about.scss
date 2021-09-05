@@ -1,52 +1,51 @@
-.about__card-wrapper {
-    width: 270px;
-  }
-  
-.about__card {
-    width: 270px;
-    height: 120px;
-  }
-  
-.about__card > .about__card-img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-.about__item-wrapper {
-    padding-top: 30px;
-  }
-  
-.about__item-header {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  
-.about__item-description {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: getColor(secondary-neutral);
-  }
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    margin-right: auto;
-    margin-left: auto;
+    row-gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .about__card-wrapper {
+    width: 450px;
+  }
+
+  .about__card {
+    width: 450px;
+    height: 120px;
+    background-color: getColor(third-neutral);
+    border-radius: 4px;
+    padding-left: 90px;
+  }
+
+  .about__item-wrapper {
+    padding-top: 30px;
+  }
+
+  .about__item-header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .about__item-description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: getColor(secondary-neutral);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
-  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .about .container {
     padding-top: 94px;
@@ -58,5 +57,41 @@
     justify-content: center;
     list-style: none;
     column-gap: 30px;
+  }
+
+  .about__card-wrapper {
+    width: 270px;
+  }
+
+  .about__card {
+    width: 270px;
+    height: 120px;
+  }
+
+  .about__card > .about__card-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .about__item-wrapper {
+    padding-top: 30px;
+  }
+
+  .about__item-header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .about__item-description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: getColor(secondary-neutral);
   }
 }
