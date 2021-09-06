@@ -10,6 +10,7 @@
       href="https://github.com/sindresorhus/modern-normalize.git"
     />
     <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,6 +70,19 @@
               </a>
             </li>
           </ul>
+          <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -757,5 +771,7 @@
     <!--END BACKDROP-->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu2.js">
+  </script>
   </body>
 </html>
