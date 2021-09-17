@@ -1,55 +1,18 @@
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .mobile-menu {
-    display: flex;
-    list-style: none;
-  }
-
-  .mobile-menu__button {
+.header {
+  &__buttons {
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 121;
+  }
+
+  &__open {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 121;
+    width: 40px;
+    height: 40px;
     fill: getColor(primary);
     background-color: transparent;
     cursor: pointer;
@@ -64,48 +27,97 @@
     }
   }
 
-  .mobile-menu__modal {
+  &__open-icon {
+    width: 24px;
+    height: 16px;
+    z-index: 121;
+    fill: getColor(primary);
+  }
+}
+
+.header-mobile__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: none;
+  fill: getColor(primary);
+  background-color: transparent;
+  cursor: pointer;
+  align-content: center;
+  padding: 10px 10px;
+
+  &-icon {
+    width: 19px;
+    height: 19px;
+    fill: getColor(primary);
+
+    &:hover,
+    &:focus {
+      fill: getColor(secondary);
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: 0px;
+  transform: scaleY(0);
+  position: relative;
+
+  & + .is-open {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &.is-open {
+    z-index: 201;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(0%);
-    min-width: 480px;
-    min-height: 796px;
     padding-left: 40px;
+    padding-bottom: 48px;
+    width: 480px;
+    height: 796px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     background-color: getColor(primary-neutral);
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
       0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
-    transition: transform 1s ease-out;
+    transform: scaleY(1);
+    transition: all;
+    transform-origin: top;
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    .mobile-menu__modal {
-      transform: translateY(-800px);
-    }
-  }
-
-  .mobile-menu__navigation-list {
+  &__navigation-list {
     display: flex;
     flex-direction: column;
     list-style: none;
     row-gap: 32px;
-    padding-top: 48px;
-    margin-bottom: 302px;
+    margin-top: 48px;
   }
 
-  .mobile-menu__navigation-link,
-  .mobile-menu__current {
+  &__navigation-link,
+  &__current {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
     color: getColor(primary);
     text-decoration: none;
+    position: relative;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -113,19 +125,20 @@
     }
   }
 
-  .mobile-menu__current {
+  &__current {
     color: getColor(secondary);
   }
 
-  .mobile-menu__contact {
+  &__contact {
     display: flex;
     flex-direction: column;
     list-style: none;
     row-gap: 32px;
+    margin-top: 306px;
     margin-bottom: 64px;
   }
 
-  .mobile-menu__contact-link--phone {
+  &__contact-link--phone {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.176;
@@ -134,7 +147,7 @@
     text-decoration: none;
   }
 
-  .mobile-menu__contact-link--mail {
+  &__contact-link--mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.167;
@@ -143,14 +156,12 @@
     text-decoration: none;
   }
 
-  .mobile-menu__social-links {
+  &__social-links {
     display: flex;
     list-style: none;
-    column-gap: 0px;
-    padding-bottom: 48px;
   }
 
-  .mobile-menu__social-links-link {
+  &__social-links-link {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -163,12 +174,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__open,
+  .header__buttons,
   .mobile-menu {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .header__open,
+  .header__buttons,
   .mobile-menu {
     display: none;
   }
