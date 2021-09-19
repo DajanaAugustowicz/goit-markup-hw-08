@@ -23,7 +23,7 @@
   .footer {
     flex-direction: column;
     padding-top: 60px;
-    text-align: center;
+    padding-bottom: 60px;
   }
 
   .footer__header {
@@ -61,6 +61,11 @@
   .footer .container {
     display: flex;
     justify-content: center;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .newsletter {
