@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     z-index: 121;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   &__open {
@@ -25,13 +29,17 @@
     &:focus {
       fill: getColor(secondary);
     }
-  }
 
-  &__open-icon {
-    width: 24px;
-    height: 16px;
-    z-index: 121;
-    fill: getColor(primary);
+    &-icon {
+      width: 24px;
+      height: 16px;
+      z-index: 121;
+      fill: getColor(primary);
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -136,55 +144,43 @@
     row-gap: 32px;
     margin-top: 306px;
     margin-bottom: 64px;
-  }
 
-  &__contact-link--phone {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.176;
-    letter-spacing: 0.02em;
-    color: getColor(secondary);
-    text-decoration: none;
-  }
+    &-link--phone {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.176;
+      letter-spacing: 0.02em;
+      color: getColor(secondary);
+      text-decoration: none;
+    }
 
-  &__contact-link--mail {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.167;
-    letter-spacing: 0.02em;
-    color: getColor(secondary-neutral);
-    text-decoration: none;
+    &-link--mail {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+      color: getColor(secondary-neutral);
+      text-decoration: none;
+    }
   }
 
   &__social-links {
     display: flex;
     list-style: none;
+
+    &-link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: getColor(secondary);
+      text-decoration: none;
+      padding: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
 
-  &__social-links-link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: getColor(secondary);
-    text-decoration: none;
-    padding: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__open,
-  .header__buttons,
-  .mobile-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .header__open,
-  .header__buttons,
-  .mobile-menu {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
