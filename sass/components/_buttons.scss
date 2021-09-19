@@ -45,6 +45,8 @@
 .signup-form__button {
   width: 200px;
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
@@ -65,12 +67,16 @@
   &:focus {
     background-color: getColor(third-neutral);
   }
-}
 
-.signup-form__button:hover > *,
-.signup-form__button:focus > * {
-  color: getColor(primary);
-  fill: getColor(primary);
+  &:hover > *,
+  &:focus > * {
+    color: getColor(primary);
+    fill: getColor(primary);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .hero__modal-button {
@@ -116,22 +122,4 @@
     color: getColor(primary-neutral);
     background-color: getColor(secondary);
   }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .signup-form__button {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .signup-form__button {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
 }
