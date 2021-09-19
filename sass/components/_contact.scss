@@ -14,13 +14,6 @@
     margin-left: 345px;
   }
 
-  &__item {
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
-  }
-
   &__link {
     display: none;
 
@@ -71,9 +64,6 @@
         fill: getColor(secondary);
       }
     }
-
-    @media screen and (min-width: 1200px) {
-    }
   }
 }
 
@@ -81,21 +71,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 60px;
+  text-align: center;
 
-  &__list {
-    list-style: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
-    padding-top: 60px;
     text-align: left;
+  }
+
+  &__list {
+    list-style: none;
   }
 
   &__item:not(:first-child) {
