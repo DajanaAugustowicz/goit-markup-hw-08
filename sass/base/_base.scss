@@ -9,22 +9,16 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
 
-@media screen and (min-width: 320px) {
-  .container {
+  @media screen and (min-width: 320px) {
     max-width: 767px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .container {
+  @media screen and (min-width: 768px) {
     max-width: 1199px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     max-width: auto;
   }
 }
