@@ -1,5 +1,19 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .about__list {
+.about {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+
+  & .container {
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,151 +21,88 @@
     row-gap: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      column-gap: 30px;
+    }
   }
 
-  .about__card-wrapper {
-    width: 450px;
-  }
-
-  .about__card {
+  &__card {
     width: 450px;
     height: 120px;
     background-color: getColor(third-neutral);
     border-radius: 4px;
     padding-left: 90px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      padding-left: 42px;
+
+      & > .about__card-img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+
+    &-wrapper {
+      width: 450px;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
+    }
   }
 
-  .about__item-wrapper {
-    padding-top: 30px;
-  }
+  &__item {
+    @media screen and (min-width: 768px) {
+      margin-left: 30px;
+      margin-top: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
 
-  .about__item-header {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+    &-wrapper {
+      padding-top: 30px;
+    }
 
-  .about__item-description {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: getColor(secondary-neutral);
-  }
-}
+    &-header {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-align: center;
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about {
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 45px;
-  }
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+    }
 
-  .about__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-    justify-content: center;
-    list-style: none;
-  }
-
-  .about__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 2 - 30px);
-  }
-
-  .about__card-wrapper {
-    width: 354px;
-  }
-
-  .about__card {
-    width: 354px;
-    height: 120px;
-    background-color: getColor(third-neutral);
-    border-radius: 4px;
-    padding-left: 42px;
-  }
-
-  .about__card > .about__card-img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .about__item-wrapper {
-    padding-top: 30px;
-  }
-
-  .about__item-header {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  .about__item-description {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: getColor(secondary-neutral);
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .about .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  .about__list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    column-gap: 30px;
-  }
-
-  .about__card-wrapper {
-    width: 270px;
-  }
-
-  .about__card {
-    width: 270px;
-    height: 120px;
-  }
-
-  .about__card > .about__card-img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .about__item-wrapper {
-    padding-top: 30px;
-  }
-
-  .about__item-header {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  .about__item-description {
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: getColor(secondary-neutral);
+    &-description {
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: getColor(secondary-neutral);
+    }
   }
 }
